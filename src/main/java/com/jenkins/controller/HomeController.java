@@ -17,8 +17,7 @@ public class HomeController {
     }
 
    @GetMapping(value = "cicd")
-    public ResponseEntity<String> cicdTest(
-            @PathVariable(value = "user-name") String userName) {
+    public ResponseEntity<String> cicdTest() {
         return ResponseEntity.ok("Well Come to my CICD testing");
     }
 
