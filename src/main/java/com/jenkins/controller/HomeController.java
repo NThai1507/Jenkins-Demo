@@ -16,4 +16,10 @@ public class HomeController {
         return ResponseEntity.ok("Well Come " + userName);
     }
 
+   @GetMapping
+    public ResponseEntity<String> wellCome(
+            @PathVariable(value = "user-name") String userName) {
+        return ResponseEntity.ok("Well Come to my CICD testing");
+    }
+
 }
